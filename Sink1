@@ -1,0 +1,44 @@
+local remote = game:GetService("ReplicatedStorage").Packages.Knit.Services.WashingDishesService.RF.CanUseSink
+
+local arguments = {
+	[1] = workspace.Assets.Sinks.Sink
+}
+
+local results = remote:InvokeServer(unpack(arguments))
+task.wait(0.01)
+local remote = game:GetService("ReplicatedStorage").Packages.Knit.Services.CookingService.RF.IsPlayerOnGrill
+
+local arguments = {}
+
+local results = remote:InvokeServer(unpack(arguments))
+task.wait(0.01)
+local remote = game:GetService("ReplicatedStorage").Packages.Knit.Services.WashingDishesService.RF.CanUseSink
+
+local arguments = {
+	[1] = workspace.Assets.Sinks.Sink
+}
+
+local results = remote:InvokeServer(unpack(arguments))
+task.wait(0.01)
+local remote = game:GetService("ReplicatedStorage").Packages.Knit.Services.WashingDishesService.RF.ClaimSink
+
+local arguments = {
+	[1] = workspace.Assets.Sinks.Sink
+}
+
+local results = remote:InvokeServer(unpack(arguments))
+task.wait(0.01)
+local remote = game:GetService("ReplicatedStorage").Packages.Knit.Services.WashingDishesService.RF.GetDishWashed
+
+local arguments = {
+	[1] = workspace.Assets.Sinks.Sink
+}
+
+local results = remote:InvokeServer(unpack(arguments))
+local remote = game:GetService("ReplicatedStorage").Packages.Knit.Services.WashingDishesService.RE.DishWashed
+
+local arguments = {
+	[1] = workspace.Assets.Sinks.Sink
+}
+
+remote:FireServer(unpack(arguments))
